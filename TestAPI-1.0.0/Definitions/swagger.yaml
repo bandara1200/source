@@ -98,11 +98,6 @@ x-wso2-cors:
    - Internal-Key
   accessControlAllowMethods:
    - GET
-   - PUT
-   - POST
-   - DELETE
-   - PATCH
-   - OPTIONS
 x-wso2-production-endpoints:
   urls:
    - http://run.mocky.io/v2/5185415ba171ea3a00704eed
