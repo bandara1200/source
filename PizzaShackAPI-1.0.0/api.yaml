@@ -3,7 +3,7 @@ version: v4.0.0
 data:
   id: ed7a5d05-93fc-48c6-b062-99a8f9193129
   name: PizzaShackAPI
-  description: This is a simple API for Pizza Shack online pizza delivery store 1.
+  description: This is a simple API for Pizza Shack online pizza delivery store 1 v1.2 git tag.
   context: /pizzashack
   version: 1.0.0
   provider: admin
@@ -17,16 +17,16 @@ data:
   enableSchemaValidation: false
   type: HTTP
   transport:
-   - http
-   - https
+  - http
+  - https
   tags:
-   - pizza
+  - pizza
   policies:
-   - Unlimited
+  - Unlimited
   authorizationHeader: Authorization
   securityScheme:
-   - oauth2
-   - oauth_basic_auth_api_key_mandatory
+  - oauth2
+  - oauth_basic_auth_api_key_mandatory
   visibility: PUBLIC
   visibleRoles: []
   visibleTenants: []
@@ -44,22 +44,22 @@ data:
   corsConfiguration:
     corsConfigurationEnabled: false
     accessControlAllowOrigins:
-     - '*'
+    - '*'
     accessControlAllowCredentials: false
     accessControlAllowHeaders:
-     - authorization
-     - Access-Control-Allow-Origin
-     - Content-Type
-     - SOAPAction
-     - apikey
-     - Internal-Key
+    - authorization
+    - Access-Control-Allow-Origin
+    - Content-Type
+    - SOAPAction
+    - apikey
+    - Internal-Key
     accessControlAllowMethods:
-     - GET
-     - PUT
-     - POST
-     - DELETE
-     - PATCH
-     - OPTIONS
+    - GET
+    - PUT
+    - POST
+    - DELETE
+    - PATCH
+    - OPTIONS
   websubSubscriptionConfiguration:
     enable: false
     secret: ""
@@ -76,40 +76,35 @@ data:
   endpointImplementationType: ENDPOINT
   scopes: []
   operations:
-   -
-    id: ""
+  - id: ""
     target: /order
     verb: POST
     authType: Application & Application User
     throttlingPolicy: Unlimited
     scopes: []
     usedProductIds: []
-   -
-    id: ""
+  - id: ""
     target: /menu
     verb: GET
     authType: Application & Application User
     throttlingPolicy: Unlimited
     scopes: []
     usedProductIds: []
-   -
-    id: ""
+  - id: ""
     target: /order/{orderId}
     verb: GET
     authType: Application & Application User
     throttlingPolicy: Unlimited
     scopes: []
     usedProductIds: []
-   -
-    id: ""
+  - id: ""
     target: /order/{orderId}
     verb: PUT
     authType: Application & Application User
     throttlingPolicy: Unlimited
     scopes: []
     usedProductIds: []
-   -
-    id: ""
+  - id: ""
     target: /order/{orderId}
     verb: DELETE
     authType: Application & Application User
@@ -118,7 +113,7 @@ data:
     usedProductIds: []
   categories: []
   keyManagers:
-   - all
+  - all
   advertiseInfo:
     advertised: false
     apiOwner: admin
